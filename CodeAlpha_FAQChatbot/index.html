@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>🤖 FAQ Chatbot</h1>
+            <p>Ask me your frequently asked questions</p>
+        </div>
+
+        <div id="chatBox" class="chat-box">
+            <div class="bot-message">
+                Hello! 👋 I'm your FAQ assistant. Ask me a question!
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your question..."
+                autocomplete="off"
+            >
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <div class="faq-section">
+            <h3>Quick Questions</h3>
+
+            <button onclick="askQuestion('What is CodeAlpha?')">
+                What is CodeAlpha?
+            </button>
+
+            <button onclick="askQuestion('How can I contact support?')">
+                How can I contact support?
+            </button>
+
+            <button onclick="askQuestion('What tasks are available?')">
+                What tasks are available?
+            </button>
+
+            <button onclick="askQuestion('What technologies can I use?')">
+                What technologies can I use?
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

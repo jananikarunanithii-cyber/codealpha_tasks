@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    background: #667eea;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.chat-header h1 {
+    margin-bottom: 8px;
+}
+
+.chat-header p {
+    font-size: 14px;
+}
+
+.chat-box {
+    height: 350px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f7f7f7;
+}
+
+.bot-message,
+.user-message {
+    max-width: 80%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+.bot-message {
+    background: #e8e8e8;
+    color: #333;
+    margin-right: auto;
+}
+
+.user-message {
+    background: #667eea;
+    color: white;
+    margin-left: auto;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+#userInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.input-area button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background: #5568d8;
+}
+
+.faq-section {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.faq-section h3 {
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.faq-section button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-section button:hover {
+    background: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+    .chat-container {
+        border-radius: 10px;
+    }
+
+    .chat-box {
+        height: 300px;
+    }
+
+    .bot-message,
+    .user-message {
+        max-width: 90%;
+    }
+}
